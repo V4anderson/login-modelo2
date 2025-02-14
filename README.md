@@ -17,13 +17,15 @@ Para rodar o PostgreSQL de maneira simples, utilizamos o Docker Desktop no Windo
 Abra o Prompt de Comando (cmd) ou PowerShell e execute:
 docker pull postgres:latest
 
-1.2 Criar e rodar um contêiner PostgreSQL
-docker run -d --name meu_postgres `
-  -e POSTGRES_USER=postgres `
-  -e POSTGRES_PASSWORD=123 `
-  -e POSTGRES_DB=vanderson `
-  -p 5432:5432 `
+1.2 Criar e rodar um contêiner PostgreSQL digite o seguintes comandos no CMD
+
+docker run -d --name meu_postgres ^
+  -e POSTGRES_USER=postgres ^
+  -e POSTGRES_PASSWORD=123 ^
+  -e POSTGRES_DB=vanderson ^
+  -p 5432:5432 ^
   postgres:latest
+
 
  Importante: Não altere o usuário, senha ou porta do contêiner, pois estão configurados para funcionar corretamente com o projeto.
 
